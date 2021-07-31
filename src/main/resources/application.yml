@@ -1,0 +1,19 @@
+# yml 문법 공부를 해야댐
+server:
+  port: 8080  # Spring boot Server port
+
+spring:
+  h2:
+    console:
+      enabled: true  # H2 웹 콘솔을 사용하겠다는 의미
+      path: /h2_console  # 콘솔의 경로
+
+  datasource:
+    driver-class-name: org.h2.Driver  #h2 드라이버 설정
+    url: jdbc:h2:~/test #접속 URL
+    username: chasyu  # 사용자 이름 (로그인 시 사용)
+    password: 1234  # 사용자 암호 (로그인 시 사용)
+    initialization-mode: always
+    schema: classpath:sql/schema.sql
+    data: classpath:sql/data.sql
+
