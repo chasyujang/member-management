@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woori.wooribackoffice.repository.SelectMapper">
+    <select id="isExaminationCategoryExistByCategoryId" resultType="boolean">
+        SELECT EXISTS (
+        SELECT *
+        FROM examination_category
+        WHERE category_id = #{categoryId}
+        )
+    </select>
+
+    <select id="isExaminationExistByFarmId" resultType="boolean">
+        SELECT EXISTS (
+        SELECT *
+        FROM examination
+        WHERE farm_id = #{farmId}
+        )
+    </select>
+
+    <select id="isExaminationCategoryExistByExaminationId" resultType="boolean">
+        SELECT EXISTS (
+        SELECT *
+        FROM examination_category
+        WHERE examination_id = #{examinationId}
+        )
+    </select>
+</mapper>

@@ -17,5 +17,5 @@ INSERT INTO `product` (`no`, `name`) VALUES
 ('10008', 'Beer'),
 ('10009', 'Bike'),
 ('10010', 'Boat');
-
+-- dd
 --출처: https://oingdaddy.tistory.com/264 [SI Supply Depot]
