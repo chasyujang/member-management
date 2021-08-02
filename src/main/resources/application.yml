@@ -9,12 +9,12 @@ spring:
       path: /h2_console  # 콘솔의 경로
 
   datasource:
+    initialization-mode: always
+    schema: classpath:sql/schema.sql
+    data: classpath:sql/data.sql
+
     hikari:
       driver-class-name: org.h2.Driver  #h2 드라이버 설정
       jdbc-url: jdbc:h2:~/test #접속 URL
       username: chasyu  # 사용자 이름 (로그인 시 사용)
       password: 1234  # 사용자 암호 (로그인 시 사용)
-      initialization-mode: always
-      schema: classpath:sql/schema.sql
-      data: classpath:sql/data.sql
-
