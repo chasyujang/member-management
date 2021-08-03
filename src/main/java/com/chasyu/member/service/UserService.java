@@ -15,4 +15,4 @@ public class UserService {
         return selectMapper.findByAll();
     }
 }
-
+//List를 사용하는것이 맞나..

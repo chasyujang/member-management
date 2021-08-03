@@ -30,6 +30,7 @@ public class DataSourceConfig {
 
         return sessionFactory.getObject();
     }
+//    Mybatis 설정
 
     @Bean
     @ConfigurationProperties("spring.datasource.hikari")    // 가장 깔끔한 data source 설정 방법으로 생각됨
