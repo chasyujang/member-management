@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+//Mybatis 설정 영역
+//Mybatis는 DAO를 사용하기 편하게 사용하기 위함
+
 @Configuration
 @MapperScan(basePackages = {"com.chasyu.member.configuration"})
 public class DataSourceConfig {

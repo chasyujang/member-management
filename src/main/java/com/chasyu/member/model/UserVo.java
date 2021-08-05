@@ -1,6 +1,8 @@
 package com.chasyu.member.model;
 
 
+// DTO와 VO의 차이는 VO는 read only!
+
 public class UserVo {
     private String code;
     private String id;
