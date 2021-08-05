@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chasyu.member.repository.SelectMapper">
-    <select id="findByAll" resultType="com.chasyu.member.model.UserVo" fetchSize="1000">
-        SELECT EXISTS (
-        SELECT code,id,name,department,pay
-        FROM `employee`
-        )
+    <select id="findByAll" resultType="com.chasyu.member.model.UserVo">
+        SELECT code,
+                id,
+                name,
+                department,
+                pay
+        FROM employee
     </select>
 
 <!--    <select id="findById" resultType="sample.oingdaddy.vo.UserVo" fetchSize="1000">-->

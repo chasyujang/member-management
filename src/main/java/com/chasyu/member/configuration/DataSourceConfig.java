@@ -15,7 +15,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 //Mybatis는 DAO를 사용하기 편하게 사용하기 위함
 
 @Configuration
-@MapperScan(basePackages = {"com.chasyu.member.configuration"})
+@MapperScan(basePackages = {"com.chasyu.member.repository"})
 public class DataSourceConfig {
     @Bean
     public SqlSessionFactory sqlSessionFactory() throws Exception {
