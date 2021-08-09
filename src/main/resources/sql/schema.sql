@@ -6,3 +6,12 @@ name VARCHAR(30),
 department VARCHAR(30),
 pay INT
 );
+
+DROP TABLE IF EXISTS employee2;
+CREATE TABLE employee2(
+code VARCHAR(30) PRIMARY KEY,
+id VARCHAR(30),
+name VARCHAR(30),
+department VARCHAR(30),
+pay INT
+);
