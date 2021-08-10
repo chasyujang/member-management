@@ -8,13 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserService {
+public class UserService2 {
     @Autowired
     private SelectMapper selectMapper;
     public List<UserVo> getUsers() {
-        return selectMapper.findByAll();
+        return selectMapper.findByAll2();
     }
 }
-
-//..?
-//DI??

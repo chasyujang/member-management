@@ -10,6 +10,16 @@
         FROM employee
     </select>
 
+    <select id="findByAll2" resultType="com.chasyu.member.model.UserVo">
+        SELECT code,
+                id,
+                name,
+                department,
+                pay
+        FROM employee2
+    </select>
+
+
 <!--    <select id="findById" resultType="sample.oingdaddy.vo.UserVo" fetchSize="1000">-->
 <!--        SELECT EXISTS (-->
 <!--        SELECT name,-->
