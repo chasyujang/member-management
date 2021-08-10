@@ -16,6 +16,8 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @Autowired
     private UserService2 userService2;
 
 

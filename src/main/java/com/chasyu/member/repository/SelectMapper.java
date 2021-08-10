@@ -11,4 +11,5 @@ public interface SelectMapper {
     public List<UserVo> findByAll();
 
     public List<UserVo> findByAll2();
+
 }

@@ -2,21 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chasyu.member.repository.SelectMapper">
     <select id="findByAll" resultType="com.chasyu.member.model.UserVo">
-        SELECT code,
-                id,
-                name,
-                department,
-                pay
+        SELECT employee.code,
+            employee.id,
+            employee.name,
+            employee.department,
+            employee.pay
         FROM employee
     </select>
 
     <select id="findByAll2" resultType="com.chasyu.member.model.UserVo">
-        SELECT code,
-                id,
-                name,
-                department,
-                pay
-        FROM employee2
+        SELECT employee.code,
+            employee.id,
+            employee.name,
+            employee.department,
+            employee.pay
+        FROM employee INNER JOIN employee2
+        ON employee.id = employee2.id;
     </select>
 
 
