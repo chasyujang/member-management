@@ -12,4 +12,8 @@ public interface SelectMapper {
 
     public List<UserVo> findByAll2();
 
+    public void Delete(int pay);
+
+    public void Update();
+
 }

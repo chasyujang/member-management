@@ -20,6 +20,15 @@
         ON employee.id = employee2.id;
     </select>
 
+    <delete id="Delete" parameterType="int">
+        delete from employee
+        where pay = #{pay}
+    </delete>
+
+    <update id="Update">
+        update employee set pay = 3500
+        where pay = 3000
+    </update>
 
 <!--    <select id="findById" resultType="sample.oingdaddy.vo.UserVo" fetchSize="1000">-->
 <!--        SELECT EXISTS (-->
